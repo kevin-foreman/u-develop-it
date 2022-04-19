@@ -11,6 +11,7 @@ CREATE TABLE parties (
     description TEXT
 );
 
+
 CREATE TABLE candidates (
 
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
