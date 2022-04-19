@@ -63,10 +63,7 @@ app.delete('/api/candidate/:id', (req, res) => {
 });
 
 // Create a candidate and add them to the database
-
-
-
-app.post('/api/candidate', ({ body }, res) => {
+    app.post('/api/candidate', ({ body }, res) => {
     const errors = inputCheck(body, 'first_name', 'last_name', 'industry_connected');
     if (errors) {
 
