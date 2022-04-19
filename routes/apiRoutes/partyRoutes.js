@@ -7,7 +7,7 @@ const db = require('../../db/connection');
 // const inputCheck = require('../../utils/inputCheck');
 
 // GET all parties
-app.get('/parties', (req, res) => {
+router.get('/parties', (req, res) => {
 
     const sql = `SELECT * FROM parties`;
 
@@ -31,7 +31,7 @@ app.get('/parties', (req, res) => {
 });
 
 // GET single party
-app.get('/party/:id', (req, res) => {
+router.get('/party/:id', (req, res) => {
 
     const sql = `SELECT * FROM parties WHERE id = ?`;
 
@@ -58,7 +58,7 @@ app.get('/party/:id', (req, res) => {
 });
 
 // DELETE party route
-app.delete('/party/:id', (req, res) => {
+router.delete('/party/:id', (req, res) => {
 
     const sql = `DELETE FROM parties WHERE id = ?`;
 
