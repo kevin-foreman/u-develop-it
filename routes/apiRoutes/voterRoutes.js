@@ -24,7 +24,7 @@ router.get('/voters', (req, res) => {
         res.json({
             message: 'Success!',
 
-            data: rows,
+            data: rows
         });
     });
 });
